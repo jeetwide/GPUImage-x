@@ -20,6 +20,8 @@
 
 #if PLATFORM == PLATFORM_ANDROID
 #include <android/log.h>
+#include <string.h>
+
 #elif PLATFORM == PLATFORM_IOS
 #import <Foundation/Foundation.h>
 #endif
@@ -48,7 +50,7 @@ NS_GI_BEGIN
                 return strResult;
             }
 
-            result = (int)strlen (buf);
+            result = (int)strlen(buf);
             strResult.append(buf,result);
             free(buf);
             va_end(marker);

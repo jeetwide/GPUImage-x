@@ -19,6 +19,7 @@
 #include "math.hpp"
 #include <string>
 #include <assert.h>
+#include <string.h>
 
 NS_GI_BEGIN
 
